@@ -1,0 +1,7 @@
+[ERROR]test_level1.py:32-14:02:58.715-请求异常200 != 500
+[ERROR]test_level1.py:33-14:07:47.280-请求异常200 != 500
+[ERROR]test_level1.py:33-14:09:21.984-请求异常200 != 412
+[ERROR]test_level1.py:33-14:09:39.536-请求异常200 != 412
+[ERROR]test_level1.py:33-14:10:25.783-请求异常200 != 412
+[ERROR]test_level1.py:33-14:10:46.304-请求异常200 != 412
+[ERROR]test_level1.py:33-14:11:02.550-请求异常200 != 412

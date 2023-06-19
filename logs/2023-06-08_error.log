@@ -1,0 +1,10 @@
+[ERROR]test_level1.py:32-15:03:53.189-断言失败200 != 412
+[ERROR]test_level1.py:32-15:05:59.258-请求异常
+[ERROR]test_level1.py:44-15:08:24.983-请求异常
+[ERROR]test_level1.py:44-15:09:03.466-请求异常200 != 412
+[ERROR]test_level1.py:32-15:16:32.971-请求异常200 != 500
+[ERROR]test_level1.py:32-15:18:35.911-请求异常200 != 500
+[ERROR]test_level1.py:32-15:45:14.600-请求异常200 != 500
+[ERROR]test_level1.py:32-16:24:48.790-请求异常200 != 500
+[ERROR]test_level1.py:32-17:26:01.487-请求异常200 != 500
+[ERROR]test_level1.py:32-21:24:09.247-请求异常200 != 500
