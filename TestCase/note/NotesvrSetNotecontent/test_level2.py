@@ -7,6 +7,7 @@ import time
 from parameterized import parameterized
 from business_common.clean_Usernote import ClearNotes
 from business_common.add_Usernote import AddNotes
+from business_common.Get_Usernote import GetNotes
 
 
 @log_class_methods
@@ -145,6 +146,11 @@ class NotesvrSetNotecontentlevel2(unittest.TestCase):
         ResCheck().res_check(exepectget_notebody_res, get_notebody_res.json())
         ResCheck().res_check(exepect_res_son, get_notebody_res.json()["noteBodies"][0])
         self.assertEqual(200, get_notebody_res.status_code)
+        """查询便签列表"""
+        noteIds = GetNotes().Get_Usernote(self.userid, self.sid)
+        expected_noteIds = [noteId]
+        self.assertEqual(expected_noteIds, noteIds)
+        info_log(f"便签列表{noteIds}")
 
     def testCase04(self):
         """先上传便签内容，再上传便签主体"""

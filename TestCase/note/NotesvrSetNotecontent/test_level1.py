@@ -6,6 +6,7 @@ from business_common.request_demo import RequestsDemo
 import time
 from parameterized import parameterized
 from business_common.clean_Usernote import ClearNotes
+from business_common.Get_Usernote import GetNotes
 
 
 @log_class_methods
@@ -53,6 +54,11 @@ class NotesvrSetNotecontentlevel1(unittest.TestCase):
         self.assertEqual(200, res1.status_code)
         ResCheck().res_check(expected_res1, res1.json())
         info_log(f"{res1.json()}")
+        """查询便签列表"""
+        noteIds =GetNotes().Get_Usernote(self.userid,self.sid)
+        expected_noteIds = [noteId]
+        self.assertEqual(expected_noteIds,noteIds)
+        info_log(f"便签列表{noteIds}")
 
     @parameterized.expand(("noteId", "title", "summary", "body", "localContentVersion", "BodyType"))
     def testCase01(self, key):

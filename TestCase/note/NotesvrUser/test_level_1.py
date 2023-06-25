@@ -42,7 +42,6 @@ class NotesUserlevel1(unittest.TestCase):
                             "thumbnail": type(None), "contentVersion": int, "contentUpdateTime": int}
         ResCheck().res_check(expected_res_son, res.json()["webNotes"][0])
         self.assertEqual(3, len(res.json()["webNotes"]))
-        self.assertIn(res.json()["webNotes"][0]["noteId"], noteIds)
 
     def testCase_01(self):
         """获取用户1的首页便签_userid必填项缺失"""

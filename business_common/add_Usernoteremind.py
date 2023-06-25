@@ -6,7 +6,7 @@ import requests
 class AddNotesremind(unittest.TestCase):
 
     def add_Usernoteremind(self, userid, sid, num):
-        host = "https://note-api.wps.cn"
+        host = "http://note-api.wps.cn"
         set_noteinfo_path = "/v3/notesvr/set/noteinfo"
         set_notecontent_path = "/v3/notesvr/set/notecontent"
 
