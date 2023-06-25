@@ -38,15 +38,8 @@ class NotesvrDeletelevel2(unittest.TestCase):
         expect_res = {"responseTime": int}
         ResCheck().res_check(expect_res, res.json())
 
-    def testCase_02(self):
-        """删除该用户不存在便签便签"""
-        info_log("用户A删除便签")
-        res = RequestsDemo().post(url=self.url, userid=self.userid, sid=self.sid, data=self.api_data_base)
-        self.assertEqual(200, res.status_code)
-        expect_res = {"responseTime": int}
-        ResCheck().res_check(expect_res, res.json())
 
-    def testCase_03(self):
+    def testCase_02(self):
         """该用户不存在便签,删除便签"""
         info_log("用户A删除便签")
         res = RequestsDemo().post(url=self.url, userid=self.userid, sid=self.sid, data=self.api_data_base)
@@ -54,7 +47,7 @@ class NotesvrDeletelevel2(unittest.TestCase):
         expect_res = {"responseTime": int}
         ResCheck().res_check(expect_res, res.json())
 
-    def testCase_04(self):
+    def testCase_03(self):
         """用户B删除用户A便签删除便签"""
         info_log("用户A添加便签")
         num = 3

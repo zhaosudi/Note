@@ -10,7 +10,7 @@ class ClearNotes(unittest.TestCase):
                    "Content-Type": "application/json",
                    "Cookie": "wps_sid={}".format(sid)}
 
-        host = "https://note-api.wps.cn"
+        host = "http://note-api.wps.cn"
         get_noteslist_path = f"/v3/notesvr/user/{userid}/home/startindex/0/rows/999/notes"
         delete_note_path = "/v3/notesvr/delete"
         clean_recycl_path = "/v3/notesvr/cleanrecyclebin"

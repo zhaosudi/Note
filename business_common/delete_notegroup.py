@@ -10,7 +10,7 @@ class DeleteNotegroup(unittest.TestCase):
                    "Content-Type": "application/json",
                    "Cookie": "wps_sid={}".format(sid)}
 
-        host = "https://note-api.wps.cn"
+        host = "http://note-api.wps.cn"
         set_nodegroup_path = "/v3/notesvr/get/notegroup"
         url = host + set_nodegroup_path
         delete_nodegroup_path = "/v3/notesvr/delete/notegroup"

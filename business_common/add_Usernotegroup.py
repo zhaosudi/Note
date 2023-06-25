@@ -6,7 +6,7 @@ import requests
 class AddNotesgroup(unittest.TestCase):
 
     def add_Usernotegroup(self, userid, sid, num, groupId):
-        host = "https://note-api.wps.cn"
+        host = "http://note-api.wps.cn"
         set_noteinfo_path = "/v3/notesvr/set/noteinfo"
         set_notecontent_path = "/v3/notesvr/set/notecontent"
         set_notegroup_path = "/v3/notesvr/set/notegroup"
